@@ -1,0 +1,170 @@
+{
+  "sections": {
+    "image_banner": {
+      "type": "image-banner",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "Browse our latest products",
+            "heading_size": "h0"
+          }
+        },
+        "button": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "Shop all",
+            "button_link_1": "shopify:\/\/collections\/all",
+            "button_style_secondary_1": true,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading",
+        "button"
+      ],
+      "disabled": true,
+      "settings": {
+        "image_overlay_opacity": 40,
+        "image_height": "large",
+        "desktop_content_position": "bottom-center",
+        "show_text_box": false,
+        "desktop_content_alignment": "center",
+        "color_scheme": "scheme-3",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": false,
+        "show_text_below": false
+      }
+    },
+    "featured_collection": {
+      "type": "featured-collection",
+      "disabled": true,
+      "settings": {
+        "title": "Featured products",
+        "heading_size": "h2",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "all",
+        "products_to_show": 8,
+        "columns_desktop": 4,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
+        "color_scheme": "scheme-1",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "quick_add": "none",
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 44,
+        "padding_bottom": 36
+      }
+    },
+    "custom_block_container_JzFT3q": {
+      "type": "custom-block-container",
+      "settings": {
+        "heading": "Tisso Vision",
+        "content": "Find the ideal gift for your loved ones.",
+        "btn-text": "choose gift"
+      }
+    },
+    "custom_banner_section_xcJb49": {
+      "type": "custom-banner-section",
+      "settings": {
+        "banner": "shopify:\/\/shop_images\/dummy_1440x780_ffffff_cccccc.png",
+        "mobile-banner": "shopify:\/\/shop_images\/dummy_750x840_ffffff_cccccc.png",
+        "heading": "The Gift Guide",
+        "content": "<p>Discover Joy: Your Ultimate Holiday Gift Destination. Explore our curated selection and find the perfect gifts to delight your loved ones this holiday season.<\/p>",
+        "btn-text": "Shop Now"
+      }
+    },
+    "custom_strip_text_wb3H64": {
+      "type": "custom-strip-text",
+      "settings": {
+        "content": "SUSTAINABLE, ETHICALLY MADE CLOTHES IN SIZES XXS TO 6XL",
+        "mob-content": "SUSTAINABLE, ETHICALLY MADE ACTIVEWEAR"
+      }
+    },
+    "custom_grid_xU8wcC": {
+      "type": "custom-grid",
+      "blocks": {
+        "product_UQdFKt": {
+          "type": "product",
+          "settings": {
+            "product": "orange-wide-leg-1",
+            "top": 53,
+            "left": 56
+          }
+        },
+        "product_RFJMLq": {
+          "type": "product",
+          "settings": {
+            "product": "tailored-jacket",
+            "top": 48,
+            "left": 82
+          }
+        },
+        "product_MkJCEt": {
+          "type": "product",
+          "settings": {
+            "product": "accordion-pleated-dress",
+            "top": 21,
+            "left": 56
+          }
+        },
+        "product_KneRkM": {
+          "type": "product",
+          "settings": {
+            "product": "green-trench-coat",
+            "top": 22,
+            "left": 65
+          }
+        },
+        "product_9dbfgV": {
+          "type": "product",
+          "settings": {
+            "product": "tennis-blue-t-shirt",
+            "top": 25,
+            "left": 50
+          }
+        },
+        "product_j9tdmi": {
+          "type": "product",
+          "settings": {
+            "product": "long-sleeve-tennis-top",
+            "top": 40,
+            "left": 75
+          }
+        }
+      },
+      "block_order": [
+        "product_UQdFKt",
+        "product_RFJMLq",
+        "product_MkJCEt",
+        "product_KneRkM",
+        "product_9dbfgV",
+        "product_j9tdmi"
+      ],
+      "settings": {
+        "heading": "Tisso vison in the wild"
+      }
+    }
+  },
+  "order": [
+    "image_banner",
+    "featured_collection",
+    "custom_block_container_JzFT3q",
+    "custom_banner_section_xcJb49",
+    "custom_strip_text_wb3H64",
+    "custom_grid_xU8wcC"
+  ]
+}

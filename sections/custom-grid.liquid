@@ -1,0 +1,86 @@
+
+{{ 'custom-product-grid.css' | asset_url | stylesheet_tag }}
+{% assign section_id = section.id %}
+{% assign product_form_id = 'test-task' | append: section_id | append: product.id %}
+{% render 'custom-new-popup', section_id: section_id %}
+<div class="test-grid">
+  <div class="page-width">
+  <div class="custom-heading">
+    <h2>{{ section.settings.heading }}</h2>
+  </div>
+  <ul class="product-grid">
+    {% for block in section.blocks %}
+      <li
+        class="product-block"
+      >
+        {% assign product = block.settings.product %}
+        <img src="{{ product.featured_image | img_url:'' }}" alt="{{ product.handle }}">
+        <button
+          data-price="{{ product.price | money }}"
+          data-json='{{ all_products[product] | json }}'
+          data-url='/products/{{ product.handle }}'
+          id="{{ product_form_id }}-submit"
+          class="custom-quick-add" type="button" style="top:{{ block.settings.top }}%;left:{{ block.settings.left }}%;">
+       <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
+<circle cx="11" cy="11" r="11" fill="#F8F8F8" fill-opacity="0.9"/>
+<path d="M11.3457 7.04175V15.5033" stroke="black" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"/>
+<path d="M7.11523 11.2725H15.5768" stroke="black" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"/>
+</svg> </button>
+      </li>
+    {% endfor %}
+  </ul>
+</div>
+</div>
+{{ 'custom-js.js' | asset_url | script_tag }}
+
+{% schema %}
+{
+  "name": "Product grid",
+  "settings": [
+    {
+      "type":"text",
+      "label":"Heading",
+      "id":"heading"
+    }
+  ],
+  "blocks":[
+    {
+      "type":"product",
+      "name":"Product",
+      "settings": [
+        {
+          "type": "product",
+          "label": "Product",
+          "id":"product"
+        },
+        {
+          	"type": "range",
+            "id": "top",
+            "min": 1,
+            "max": 100,
+            "step": 1,
+            "unit": "%",
+            "label": "Vertical Icon Position",
+            "default": 16
+        },
+        {
+          	"type": "range",
+            "id": "left",
+            "min": 1,
+            "max": 100,
+            "step": 1,
+            "unit": "%",
+            "label": "Horizontal Icon Position",
+            "default": 16
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Grid",
+      "category":"grid"
+    }
+  ]
+}
+{% endschema %}

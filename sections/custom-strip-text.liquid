@@ -1,0 +1,35 @@
+
+{{ 'custom-style.css' | asset_url | stylesheet_tag }}
+<div class="strip-text-container">
+  <div class="page-width">
+    <p class="desk-text">
+      {{ section.settings.content }}
+    </p>
+    <p class="mob-text">
+      {{ section.settings.mob-content }}
+    </p>
+  </div>
+</div>
+{% schema %}
+{
+"name": "Strip Text Container",
+"settings": [
+  {
+    "type":"text",
+    "id":"content",
+    "label":"Add Desktop Content"
+  },
+  {
+    "type":"text",
+    "id":"mob-content",
+    "label":"Add Mobile Content"
+  }
+],
+"presets": [
+{
+"name": "Strip Text Container",
+"category": "ADVANCED LAYOUT"
+}
+]
+}
+{% endschema %}
