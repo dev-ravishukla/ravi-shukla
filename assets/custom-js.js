@@ -162,7 +162,7 @@ const productPopup = new ProductPopup();
 productPopup.initialize();
 
 const number = [1,2,3,4];
-    for(i = arr.length; i = 0; i-- ){
+    for(i = number.length; i = 0; i-- ){
       console.log([i]);
     }
 
